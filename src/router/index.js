@@ -13,6 +13,10 @@ const routes = [
         path: '/organizingCommittiees',
         name: 'organizingCommittiees',
         component: () => import('../views/organizingCommittiees')
+    },  {
+        path: '/importantDates',
+        name: 'importantDates',
+        component: () => import('../views/importantDates')
     },
     {
         path: '/dashboard',

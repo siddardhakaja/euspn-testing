@@ -1,6 +1,5 @@
 <template>
   <v-simple-table dark>
-    <template v-slot:default>
       <thead>
         <tr>
           <th class="text-left">Name</th>
@@ -13,7 +12,6 @@
           <td>{{ item.calories }}</td>
         </tr>
       </tbody>
-    </template>
   </v-simple-table>
 </template>
 <script>
@@ -61,8 +59,8 @@
             name: 'KitKat',
             calories: 518,
           },
-        ],
+        ]
       }
-    },
+    }
   }
 </script>
