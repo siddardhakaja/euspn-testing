@@ -154,17 +154,17 @@
             <v-tooltip right :disabled="!miniVariant">
                 <v-toolbar flat class="transparent" dense slot="activator">
                     <v-list class="pa-0" :class="{'list-border-bottom' : miniVariant}">
-                        <v-list-tile to="/cameraReadySubmission" exact>
+                        <v-list-tile to="/conferenceProgram" exact>
                             <v-list-tile-action>
                                 <v-icon>pages</v-icon>
                             </v-list-tile-action>
                             <v-list-tile-content>
-                                <v-list-tile-title>Conferance Program</v-list-tile-title>
+                                <v-list-tile-title>Conference Program</v-list-tile-title>
                             </v-list-tile-content>
                         </v-list-tile>
                     </v-list>
                 </v-toolbar>
-                <span>Conferance Program</span>
+                <span>Conference Program</span>
             </v-tooltip>
             
 
@@ -272,7 +272,7 @@
              <v-tooltip right :disabled="!miniVariant">
                 <v-toolbar flat class="transparent" dense slot="activator">
                     <v-list class="pa-0" :class="{'list-border-bottom' : miniVariant}">
-                        <v-list-tile to="/pastEUSPN" exact>
+                        <v-list-tile to="/contact" exact>
                             <v-list-tile-action>
                                 <v-icon>info</v-icon>
                             </v-list-tile-action>
@@ -357,7 +357,7 @@
             <router-view/>
         </v-content>
        <v-footer
-       height="100px"
+       height="170px"
     light
     class="white"
   >

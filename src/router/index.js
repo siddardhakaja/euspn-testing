@@ -31,6 +31,11 @@ const routes = [
         component: () => import('../views/paperSubmission')
     },
     {
+        path: '/conferenceProgram',
+        name: 'conference Program',
+        component: () => import('../views/conferenceProgram')
+    },
+    {
         path: '/dashboard',
         name: 'dashboard',
         component: () => import('../views/Dashboard/Layout'),
@@ -71,7 +76,22 @@ const routes = [
             },
             
         ]
-    }
+    },
+    {
+        path: '/journalSpecialIssues',
+        name: 'Journal Special Issues',
+        component: () => import('../views/journalSpecialIssues')
+    },
+    {
+        path: '/contact',
+        name: 'contact',
+        component: () => import('../views/contact')
+    },
+    {
+        path: '/pastEUSPN',
+        name: 'pastEUSPN',
+        component: () => import('../views/pastEUSPN')
+    },
 ]
 
 export default new VueRouter({

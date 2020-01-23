@@ -24,45 +24,35 @@
              <h1 class=" display-1 font-weight-thin">Paper Submission</h1> <br>
             <h2 class="subtitle-2"> Guidelines to Paper Submissions</h2><br>
             <h2 class="subtitle-2">Paper Format </h2><br>
-            <p class="body-1"> The submitted paper must be formatted according to the guidelines of Procedia Computer Science,
-                 MS Word Template, Latex, Template Generic, 
-                 The EUSPN-2019 will be held in conjunction with the 
-                   <a href="./assets/temp.doc">Download</a>
-            </p>
+            <p class="body-1"> The submitted paper must be formatted according to the
+               <a href="https://www.journals.elsevier.com/procedia-computer-science/" target="_blank">the guidelines of Procedia 
+               Computer Science</a>, MS Word Template, Latex, <a href="./assets/temp.doc" target="_blank">Template Generic</a>.
+               <button @click="download" class="btn btn-primary">Download file</button>
+            </p><br>
+             <h2 class="subtitle-2">Paper Length</h2><br>
+            <p> 
+              Submitted technical papers must be no longer than 8 pages including all figures, tables and references. 
+            </p><br>
+            <h2 class="subtitle-2">Paper Submission</h2><br>
             <p>
-              EUSPN 2020 will be held in Madeira, a Portuguese archipelago. Madeira is a popular year-round tourist destination,
-               known for its remarkable mountainous scenery and mild year-long climate. Although, Madeira is part of Europe it is approximately 1,000 km
-                from the continent while being only 520 km from the coast of Africa. It is about an hour and a half flight from the capital
-                 of Portugal, Lisbon. Funchal, the picturesque capital of Madeira, is situated on the south coast of the island and one of Atlantic Oceans
-                  most popular cruise ship ports. Madeira is a scenic island with many unique destinations such as the Laurisilva forest, a UNESCO World Heritage site. 
+             Authors are requested to submit their papers electronically using the <a href=""> *online conference management system</a>
+             in PDF format before the deadline.
             </p>
+          
             <p>
-              Visitors can also choose from a variety of activities such as boat trips, whale watching, hiking and walking
-               along the mountain trails.
-            </p>
-          <v-container>
-             <v-layout row wrap :align="alignment"
-          :justify="justify" >
+             The submission processes will be managed by <a href=" https://easychair.org/account/signin" target="_blank"> easychair </a>. 
+             If you have used this system before, you can use the same username and password. If this is your first time using EasyChair, 
+             you will need to register for an account by clicking “ I have no EasyChair account” button. Upon completion of registration,
+               you will get a notification email from the system and you are ready for submitting your paper. You can upload 
+               and re-upload the paper to the system by the submission due date.
+            </p><br>
+            <h2 class="subtitle-2">Publication</h2><br>
+            <p>
+              All accepted papers will be scheduled for oral presentations and will be included in the conference proceedings 
+              published by Elsevier Science in the open-access Procedia Computer Science series on-line. At least one author of 
+              each accepted paper is required to register and attend the conference to present the work.
 
-            <center>
-            <v-flex xs12 md1   >
-            <img :src="require('./assets/DiscoverMadeira-1.png')" >
-            </v-flex>
-            </center>
-            
-            </v-layout> 
-          </v-container>
-            <p>
-              All EUSPN 2019 accepted papers will be published by Elsevier Science in the open-access Procedia Computer Science
-               series on-line. Procedia Computer Science is hosted by Elsevier on www.Elsevier.com and on Elsevier content platform 
-               ScienceDirect (www.sciencedirect.com), and will be freely available worldwide. All papers in Procedia will be indexed 
-               by <a href="www.scopus.com" target="_blank">Scopus</a> and by <a href="http://thomsonreuters.com/conference-proceedings-citation-index/"
-                target="_blank">Thomson Reuters' Conference Proceeding Citation Index </a>. All papers in Procedia will also be indexed by
-                 Scopus (www.scopus.com) and Engineering Village (Ei) (www.engineeringvillage.com). This includes EI Compendex
-                  (www.ei.org/compendex). Moreover, all accepted papers will be indexed in <a href="http://dblp.uni-trier.de/" target="_blank">DBLP</a>. 
-                  The papers will contain linked references, XML versions and citable DOI numbers. You will be able to provide a 
-                  hyperlink to all delegates and direct your conference website visitors to your proceedings.
-            </p>
+            </p><br>
             
           </v-flex>
         </v-layout>
@@ -76,21 +66,7 @@
 </template>
         
 
-<script>
-    export default {
-        methods: {
-            download(){
-            axios({ 
-                    url: './assets/temp.doc',
-                    method: 'GET',
-                    responseType: 'blob',
-                })
-                .then((res) => console.log(res.data))
-                .catch(err => console.log(err))
-            }
-        }
-    }
-</script>
+
 
 <style scoped>
     .outine-2 {
